@@ -1,0 +1,14 @@
+.input-group {
+	margin-top: 10px;
+}
+.main-label {
+	display: inline-block;
+	width: 125px;
+}
+.areacode,
+.base {
+	width: 25px;
+}
+.end {
+	width: 35px;
+}
