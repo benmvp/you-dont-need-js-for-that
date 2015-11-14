@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Functionality - You don't need JavaScript for that!</title>
+    <title>Functionality - You don't need JavaScript for that!</title>
       
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,56 +16,77 @@
 
     <p>View <a href="https://github.com/benmvp/you-dont-need-js-for-that/blob/master/functionality.html" target="_blank">HTML</a> and <a href="https://github.com/benmvp/you-dont-need-js-for-that/blob/master/css/functionality.css" target="_blank">CSS</a> code</p>
 
-    <form method="GET" action=".">
+    <form class="form" method="GET" action="" novalidate>
       <fieldset>
         <legend>No JavaScript form</legend>
 
         <div class="input-group">
           <label class="main-label" for="name">Full Name*:</label>
-          <input id="name" name="name" type="text" placeholder="ex: Lisa Nguyen" maxlength="50" minlength="5" required />
+          <input id="name" name="name" type="text" class="input-text" placeholder="Lisa Nguyen" maxlength="50" minlength="5" required title="Full name (1-50 characters)" />
         </div>
 
         <div class="input-group">
           <label class="main-label" for="email">Email*:</label>
-          <input id="email" email="email" type="email" placeholder="ex: ben@benmvp.com" maxlength="75" minlength="5" required />
+          <input id="email" email="email" type="email" class="input-text" placeholder="lisa.nguyen@fake.com" maxlength="75" minlength="5" required title="Email (5-75 characters)" />
         </div>
 
         <div class="input-group">
           <label class="main-label" for="birthdate">Birthdate:</label>
-          <input id="birthdate" name="birthdate" type="date" placeholder="ex: 01/01/1956" />
+          <input id="birthdate" name="birthdate" type="date" class="input-text" placeholder="01/01/1956" pattern="^\d{2}/\d{2}/\d{4}$" />
         </div>
 
         <div class="input-group">
           <label class="main-label" for="areacode">Phone Number*:</label>
-          (<input id="areacode" class="areacode" name="areacode" type="tel" placeholder="216" minlength="3" maxlength="3" required />)
-          <input type="tel" class="base" name="base" type="tel" placeholder="123" minlength="3" maxlength="3" required /> &mdash;
-          <input type="tel" class="end" name="end" type="tel" placeholder="4567" minlength="4" maxlength="4" required />
+          (<input id="areacode" class="input-text areacode" name="areacode" type="tel" placeholder="216" minlength="3" maxlength="3" required title="Area Code (3 digits)" />)
+          <input type="tel" class="input-text prefix" name="prefix" type="tel" placeholder="123" minlength="3" maxlength="3" required title="Prefix (3 digits)" /> &mdash;
+          <input type="tel" class="input-text line" name="line" type="tel" placeholder="4567" minlength="4" maxlength="4" required title="Line (4 digits)" />
         </div>
 
         <div class="input-group">
           <label class="main-label" for="expertise">Web Expertise*:</label>
-          <input id="expertise" name="expertise" type="range" placeholder="1- 10" required />
+          <input id="expertise" name="expertise" class="expertise" type="range" placeholder="1 - 10" min="1" max="10" step="1" required />
         </div>
 
         <div class="input-group">
           <label class="main-label" for="blog">Blog URL:</label>
-          <input id="blog" name="blog" type="url" placeholder="ex: www.benmvp.com" />
+          <input id="blog" name="blog" type="url" class="input-text" placeholder="http://www.benmvp.com" />
         </div>
 
         <div class="input-group">
-          <label class="main-label" for="favcolor">Favorite Color*:</label>
-          <input id="favcolor" name="favcolor" type="color" placeholder="#0fe48d" required />
+          <label class="main-label" for="fav-color">Favorite Color*:</label>
+          <input id="fav-color" name="favcolor" type="color" class="fav-color" placeholder="#0fe48d" required pattern="#[0-9a-fA-F]{6}" />
         </div>
 
         <div class="input-group">
           <label class="main-label" for="donation">Donation*:</label>
-          £<input id="donation" name="donation" type="number" value="15" min="5" max="1000" step=".5" required />
+          £ <input id="donation" name="donation" type="number" class="input-text" min="5" max="1000" step=".5" required list="suggested-donations" />
+
+          <datalist id="suggested-donations">
+            <option>5</option>
+            <option>10</option>
+            <option>25</option>
+            <option>50</option>
+            <option>100<option>
+            <option>250</option>
+            <option>500</option>
+            <option>1000</option>
+          </datalist>
         </div>
 
         <div class="input-group">
-          <input type="submit" value="Submit!" />
+          <button type="submit" class="submit">Submit!</button>
         </div>
       </fieldset>
     </form>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+      $('.form').submit(function(e) {
+        $(this).addClass('form-submitted');
+        if (!this.checkValidity()) {
+          e.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>

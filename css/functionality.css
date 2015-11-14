@@ -5,10 +5,22 @@
 	display: inline-block;
 	width: 125px;
 }
+.input-text:required {
+	border: 2px solid black;
+}
+.input-text:optional {
+	border: 1px solid silver;
+}
+.form-submitted .input-text:valid {
+	background: #ccff90;
+}
+.form-submitted .input-text:invalid {
+	background: #ff8a80;
+}
 .areacode,
-.base {
+.prefix {
 	width: 25px;
 }
-.end {
+.line {
 	width: 35px;
 }
