@@ -1,0 +1,36 @@
+.collection {
+    align-items: center;
+    background: #00a8f2;
+    border-radius: 5px;
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.item {
+    background: #00cc52;
+    border-radius: 5px;
+    color: #000;
+    font-size: 48px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-1 {
+    height:35%;
+    order: 2;
+}
+.item-2 {
+    flex-grow: 3;
+    height:65%;
+    order: 3;
+}
+.item-3 {
+    height:83%;
+    order: 1;
+}
+.item-4 {
+    height:57%;
+    order: 0;
+}
