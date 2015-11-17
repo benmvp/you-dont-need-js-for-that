@@ -1,36 +1,31 @@
 .collection {
-    align-items: center;
+    align-items: flex-end;
     background: #00a8f2;
     border-radius: 5px;
     display: flex;
     height: 400px;
     justify-content: space-between;
+    padding: 10px;
 }
-
 .item {
     background: #00cc52;
+    border: 1px solid #222;
     border-radius: 5px;
     color: #000;
     font-size: 48px;
-    margin: 10px;
     padding: 10px;
     text-align: center;
 }
-
 .item-1 {
-    height:35%;
     order: 2;
 }
 .item-2 {
-    flex-grow: 3;
-    height:65%;
     order: 3;
+    align-self: stretch;
 }
 .item-3 {
-    height:83%;
     order: 1;
 }
 .item-4 {
-    height:57%;
     order: 0;
 }
