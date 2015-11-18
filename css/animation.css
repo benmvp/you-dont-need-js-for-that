@@ -1,0 +1,39 @@
+.canvas {
+    background: #ccc;
+    border: 10px solid black;
+    box-sizing: border-box;
+    display: flex;
+    height: 400px;
+    width: 100%;
+
+    transition: all 1s;
+}
+.canvas:hover {
+    background: #222;
+}
+
+.square {
+    background: #f00;
+    border: 3px solid #00f;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+
+    transition: all 5s ease-in-out 1s;
+}
+.square:hover {
+    background: #008b00;
+    border: 30px solid #ff0;
+    border-radius: 50%;
+    color: #ddd;
+    font-size: 100px;
+    height: 350px;
+    width: calc(100% - 20px);
+}
