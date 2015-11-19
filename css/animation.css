@@ -37,3 +37,29 @@
     height: 350px;
     width: calc(100% - 20px);
 }
+
+.mobile-page {
+    border: 1px solid black;
+    display: flex;
+    height: 627px;
+    overflow: hidden;
+    width: 375px;
+}
+.mobile-page-nav {
+    background: #404040;
+    color: #fff;
+    flex: 0 0 0;
+    font-size: larger;
+    overflow: hidden;
+
+    transition: flex-basis 500ms;
+}
+.mobile-page.active .mobile-page-nav {
+    flex-basis: 200px;
+}
+.mobile-page-content {
+    background: #fff;
+	box-sizing: border-box;
+    flex: 0 0 100%;
+	padding: 15px;
+}
