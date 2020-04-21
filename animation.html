@@ -4,56 +4,100 @@
     <title>Animation - You don't need JavaScript for that!</title>
 
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animation.css" />
   </head>
   <body>
     <h1>Animation with CSS3 <code>transition</code></h1>
 
-    <p>View <a href="https://github.com/benmvp/you-dont-need-js-for-that/blob/master/animation.html" target="_blank">HTML</a> and <a href="https://github.com/benmvp/you-dont-need-js-for-that/blob/master/css/animation.css" target="_blank">CSS</a> code</p>
+    <p>
+      View
+      <a
+        href="https://github.com/benmvp/you-dont-need-js-for-that/blob/master/animation.html"
+        target="_blank"
+        >HTML</a
+      >
+      and
+      <a
+        href="https://github.com/benmvp/you-dont-need-js-for-that/blob/master/css/animation.css"
+        target="_blank"
+        >CSS</a
+      >
+      code
+    </p>
 
     <h2>Multi-property transition example</h2>
 
-    <p>The live code example below shows a &lt;div&gt; that has various of its properties transitioned (animated) from their initial states to their hover states using CSS3 <code>transition</code>. Hover over the SQUARE to see the animation take place<p>
+    <p>
+      The live code example below shows a &lt;div&gt; that has various of its
+      properties transitioned (animated) from their initial states to their
+      hover states using CSS3 <code>transition</code>. Hover over the SQUARE to
+      see the animation take place
+    </p>
+    <p></p>
 
     <div class="canvas">
-        <div class="square">
-            <h2>SQUARE</h2>
-        </div>
+      <div class="square">
+        <h2>SQUARE</h2>
+      </div>
     </div>
 
     <h2>Mobile side nav transition example</h2>
 
-    <p>The live code example below shows how you can pair CSS with a tiny bit of JavaScript by using JavaScript to set a CSS class on a container which can trigger animations of child DOM elements. Click on the 3 bars to trigger a slide out of side navigation section.<p>
+    <p>
+      The live code example below shows how you can pair CSS with a tiny bit of
+      JavaScript by using JavaScript to set a CSS class on a container which can
+      trigger animations of child DOM elements. Click on the 3 bars to trigger a
+      slide out of side navigation section.
+    </p>
+    <p></p>
 
     <div class="mobile-page">
-        <nav class="mobile-page-nav">
-            <ul class="mobile-page-nav-list">
-                <li class="mobile-page-nav-list-item">Home</li>
-                <li class="mobile-page-nav-list-item">Browse</li>
-                <li class="mobile-page-nav-list-item">Search</li>
-                <li class="mobile-page-nav-list-item">My Account</li>
-                <li class="mobile-page-nav-list-item">Cart</li>
-                <li class="mobile-page-nav-list-item">Help</li>
-            </ul>
-        </nav>
-        <section class="mobile-page-content">
-            <a href="javascript:$('.mobile-page').toggleClass('active')">
-                <i class="fa fa-bars fa-lg"></i>
-            </a>
-            <h2>Page Title</h2>
+      <nav class="mobile-page-nav">
+        <ul class="mobile-page-nav-list">
+          <li class="mobile-page-nav-list-item">Home</li>
+          <li class="mobile-page-nav-list-item">Browse</li>
+          <li class="mobile-page-nav-list-item">Search</li>
+          <li class="mobile-page-nav-list-item">My Account</li>
+          <li class="mobile-page-nav-list-item">Cart</li>
+          <li class="mobile-page-nav-list-item">Help</li>
+        </ul>
+      </nav>
+      <section class="mobile-page-content">
+        <a href="javascript:$('.mobile-page').toggleClass('active')">
+          <i class="fa fa-bars fa-lg"></i>
+        </a>
+        <h2>Page Title</h2>
 
-            <div style="background:#ccc;height:200px"></div>
+        <div style="background: #ccc; height: 200px;"></div>
 
-            <p>Bacon ipsum dolor amet alcatra laborum kevin, consequat consectetur labore ribeye officia ullamco ut laboris in in fatback excepteur. Dolore strip steak duis jerky exercitation anim. Sunt pork belly laboris elit labore. Fugiat ribeye eiusmod tempor do sirloin.</p>
+        <p>
+          Bacon ipsum dolor amet alcatra laborum kevin, consequat consectetur
+          labore ribeye officia ullamco ut laboris in in fatback excepteur.
+          Dolore strip steak duis jerky exercitation anim. Sunt pork belly
+          laboris elit labore. Fugiat ribeye eiusmod tempor do sirloin.
+        </p>
 
-            <p>Duis rump venison, consectetur mollit meatloaf reprehenderit velit pariatur non. Pariatur sed irure, pig strip steak laborum alcatra salami. Aliquip qui meatloaf, aute drumstick ut sausage capicola jerky prosciutto exercitation rump adipisicing deserunt. Occaecat rump strip steak exercitation short ribs, beef minim fugiat cupidatat ribeye nulla. Tongue drumstick ipsum strip steak fugiat swine. Reprehenderit shoulder pancetta nulla.</p>
+        <p>
+          Duis rump venison, consectetur mollit meatloaf reprehenderit velit
+          pariatur non. Pariatur sed irure, pig strip steak laborum alcatra
+          salami. Aliquip qui meatloaf, aute drumstick ut sausage capicola jerky
+          prosciutto exercitation rump adipisicing deserunt. Occaecat rump strip
+          steak exercitation short ribs, beef minim fugiat cupidatat ribeye
+          nulla. Tongue drumstick ipsum strip steak fugiat swine. Reprehenderit
+          shoulder pancetta nulla.
+        </p>
 
-            <p>Veniam short loin lorem salami kevin fatback. Beef ribs turkey irure short loin. Occaecat fatback eu cupidatat nostrud qui meatloaf. Biltong jerky ham, short loin incididunt ham hock ribeye filet mignon occaecat enim et turkey quis.</p>
-        </section>
+        <p>
+          Veniam short loin lorem salami kevin fatback. Beef ribs turkey irure
+          short loin. Occaecat fatback eu cupidatat nostrud qui meatloaf.
+          Biltong jerky ham, short loin incididunt ham hock ribeye filet mignon
+          occaecat enim et turkey quis.
+        </p>
+      </section>
     </div>
 
     <script src="js/jquery-2.1.4.min.js"></script>
